@@ -1,0 +1,2842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="THE LEOPOLD CAFÉ & BISTRO - Premium Café and Restaurant">
+    <meta name="author" content="THE LEOPOLD CAFÉ & BISTRO">
+
+    <title>THE LEOPOLD CAFÉ & BISTRO</title>
+
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+                     HEADER
+===================================================== -->
+
+    <header class="header">
+
+        <div class="logo-area">
+
+            <img src="assets/logo.png" alt="THE LEOPOLD Logo">
+
+            <div class="brand-text">
+                <h2>THE LEOPOLD</h2>
+                <span>Premium Café & Restaurant</span>
+            </div>
+
+        </div>
+
+
+        <nav class="navbar">
+
+            <a href="#home">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="#about">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>About</span>
+            </a>
+
+            <a href="#menu">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Menu</span>
+            </a>
+
+            <a href="#specials">
+                <i class="fa-solid fa-star"></i>
+                <span>Specials</span>
+            </a>
+
+            <a href="#gallery">
+                <i class="fa-solid fa-image"></i>
+                <span>Gallery</span>
+            </a>
+
+            <a href="#reviews">
+                <i class="fa-solid fa-comment"></i>
+                <span>Reviews</span>
+            </a>
+
+            <a href="#contact">
+                <i class="fa-solid fa-phone"></i>
+                <span>Contact</span>
+            </a>
+
+            <a href="#orders" class="orders-link">
+                <i class="fa-solid fa-box"></i>
+                <span>My Orders</span>
+            </a>
+
+        </nav>
+
+
+        <div class="header-buttons">
+
+            <button onclick="openSearch()" title="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="cart-button" onclick="openCart()" title="Cart">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span id="cartCount">0</span>
+
+            </button>
+
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Switch Theme">
+
+                🌙
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+                     SEARCH
+===================================================== -->
+
+    <div class="search-box" id="searchBox">
+
+        <div class="search-content">
+
+            <input type="text" id="searchInput" placeholder="Search coffee, pizza, pasta..." onkeyup="searchMenu()">
+
+            <button onclick="closeSearch()">✕</button>
+
+        </div>
+
+        <div id="searchResults"></div>
+
+    </div>
+
+
+    <!-- =====================================================
+                     HERO
+===================================================== -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-overlay">
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    WELCOME TO THE LEOPOLD
+                </p>
+
+                <h1>
+                    Brewed With Love,
+                    <span>Served With Passion.</span>
+                </h1>
+
+                <p>
+                    A premium café and restaurant experience where
+                    exceptional coffee, delicious food and beautiful
+                    moments come together.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#menu" class="primary-btn">
+                        Explore Menu
+                    </a>
+
+                    <a href="#contact" class="secondary-btn">
+                        Book a Table
+                    </a>
+
+                </div>
+
+
+                <div class="opening-status">
+
+                    <span class="status-dot"></span>
+
+                    <strong>Open Today</strong>
+
+                    <span>8:00 AM – 11:00 PM</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+                     FEATURES
+===================================================== -->
+
+    <section class="features">
+
+        <div class="feature">
+
+            <div>☕</div>
+
+            <h3>Premium Coffee</h3>
+
+            <p>
+                Freshly brewed with carefully selected beans.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div>🍽️</div>
+
+            <h3>Delicious Food</h3>
+
+            <p>
+                Fresh ingredients and delicious recipes.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div>✨</div>
+
+            <h3>Beautiful Ambience</h3>
+
+            <p>
+                A comfortable place for every occasion.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div>❤️</div>
+
+            <h3>Made With Love</h3>
+
+            <p>
+                Every plate and cup is prepared with care.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+                     ABOUT
+===================================================== -->
+
+    <section id="about" class="about section">
+
+        <div class="about-image">
+
+            <img src="assets/about.jpg" alt="THE LEOPOLD Interior">
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="section-label">
+                OUR STORY
+            </p>
+
+            <h2>
+                A Place Where
+                <span>Every Sip</span>
+                Tells a Story
+            </h2>
+
+            <p>
+                THE LEOPOLD was created with a simple idea —
+                to bring together premium coffee, delicious food
+                and a warm atmosphere under one roof.
+            </p>
+
+            <p>
+                From our carefully roasted coffee beans to our
+                freshly prepared dishes, every detail is designed
+                to make your visit memorable.
+            </p>
+
+
+            <div class="about-details">
+
+                <div>
+                    <strong>10+</strong>
+                    <span>Years of Experience</span>
+                </div>
+
+                <div>
+                    <strong>50+</strong>
+                    <span>Menu Items</span>
+                </div>
+
+                <div>
+                    <strong>10K+</strong>
+                    <span>Happy Guests</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+                     SPECIALS
+===================================================== -->
+
+    <section id="specials" class="section specials">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                OUR SPECIALS
+            </p>
+
+            <h2>
+                Signature
+                <span>Favourites</span>
+            </h2>
+
+            <p>
+                A few of our most-loved creations,
+                carefully prepared for you.
+            </p>
+
+        </div>
+
+
+        <div class="special-grid">
+
+
+            <div class="special-card">
+
+                <img src="assets/signature-coffee.jpg" alt="Signature Coffee">
+
+                <div class="special-info">
+
+                    <h3>Signature Coffee</h3>
+
+                    <p>
+                        Rich, aromatic and perfectly brewed.
+                    </p>
+
+                    <div class="price-row">
+
+                        <strong>₹180</strong>
+
+                        <button onclick="addToCart('Signature Coffee',180)">
+                            + Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="special-card">
+
+                <img src="assets/cold-coffee.jpg" alt="Cold Coffee">
+
+                <div class="special-info">
+
+                    <h3>Classic Cold Coffee</h3>
+
+                    <p>
+                        Creamy, chilled and refreshing.
+                    </p>
+
+                    <div class="price-row">
+
+                        <strong>₹160</strong>
+
+                        <button onclick="addToCart('Cold Coffee',160)">
+                            + Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="special-card">
+
+                <img src="assets/signature-pizza.jpg" alt="Signature Pizza">
+
+                <div class="special-info">
+
+                    <h3>Signature Pizza</h3>
+
+                    <p>
+                        Fresh toppings with a crispy crust.
+                    </p>
+
+                    <div class="price-row">
+
+                        <strong>₹320</strong>
+
+                        <button onclick="addToCart('Signature Pizza',320)">
+                            + Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="special-card">
+
+                <img src="assets/creamy-pasta.jpg" alt="Creamy Pasta">
+
+                <div class="special-info">
+
+                    <h3>Creamy Pasta</h3>
+
+                    <p>
+                        Rich creamy sauce with fresh ingredients.
+                    </p>
+
+                    <div class="price-row">
+
+                        <strong>₹280</strong>
+
+                        <button onclick="addToCart('Creamy Pasta',280)">
+                            + Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="special-card">
+
+                <img src="assets/chocolate-cake.jpg" alt="Chocolate Cake">
+
+                <div class="special-info">
+
+                    <h3>Chocolate Cake</h3>
+
+                    <p>
+                        Moist chocolate cake for sweet moments.
+                    </p>
+
+                    <div class="price-row">
+
+                        <strong>₹190</strong>
+
+                        <button onclick="addToCart('Chocolate Cake',190)">
+                            + Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="special-card">
+
+                <img src="assets/berry-smoothie.jpg" alt="Berry Smoothie">
+
+                <div class="special-info">
+
+                    <h3>Berry Smoothie</h3>
+
+                    <p>
+                        Fresh berries blended into perfection.
+                    </p>
+
+                    <div class="price-row">
+
+                        <strong>₹210</strong>
+
+                        <button onclick="addToCart('Berry Smoothie',210)">
+                            + Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+                     MENU
+===================================================== -->
+
+    <section id="menu" class="section menu-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                EXPLORE OUR MENU
+            </p>
+
+            <h2>
+                Something Delicious
+                <span>For Everyone</span>
+            </h2>
+
+            <p>
+                Explore our carefully selected collection
+                of beverages, food and desserts.
+            </p>
+
+        </div>
+
+
+        <div class="menu-tabs">
+
+            <button class="active" onclick="filterMenu('all',this)">
+                All
+            </button>
+
+            <button onclick="filterMenu('coffee',this)">
+                Coffee
+            </button>
+
+            <button onclick="filterMenu('tea',this)">
+                Tea
+            </button>
+
+            <button onclick="filterMenu('cold',this)">
+                Cold Drinks
+            </button>
+
+            <button onclick="filterMenu('dessert',this)">
+                Desserts
+            </button>
+
+            <button onclick="filterMenu('snacks',this)">
+                Snacks
+            </button>
+
+            <button onclick="filterMenu('pizza',this)">
+                Pizza
+            </button>
+
+            <button onclick="filterMenu('burger',this)">
+                Burgers
+            </button>
+
+            <button onclick="filterMenu('sandwich',this)">
+                Sandwich
+            </button>
+
+            <button onclick="filterMenu('pasta',this)">
+                Pasta
+            </button>
+
+            <button onclick="filterMenu('main',this)">
+                Main Course
+            </button>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+
+            <!-- COFFEE -->
+
+            <div class="menu-item coffee">
+
+                <img src="assets/espresso.jpg" alt="Espresso">
+
+                <div>
+
+                    <h3>Espresso</h3>
+
+                    <p>Strong and rich classic coffee.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹120</strong>
+
+                        <button onclick="addToCart('Espresso',120)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item coffee">
+
+                <img src="assets/americano.jpg" alt="Americano">
+
+                <div>
+
+                    <h3>Americano</h3>
+
+                    <p>Espresso with hot water.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹140</strong>
+
+                        <button onclick="addToCart('Americano',140)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item coffee">
+
+                <img src="assets/cappuccino.jpg" alt="Cappuccino">
+
+                <div>
+
+                    <h3>Cappuccino</h3>
+
+                    <p>Espresso with creamy foam.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹170</strong>
+
+                        <button onclick="addToCart('Cappuccino',170)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item coffee">
+
+                <img src="assets/cafe-latte.jpg" alt="Cafe Latte">
+
+                <div>
+
+                    <h3>Café Latte</h3>
+
+                    <p>Smooth espresso with steamed milk.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹180</strong>
+
+                        <button onclick="addToCart('Café Latte',180)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item coffee">
+
+                <img src="assets/mocha.jpg" alt="Mocha">
+
+                <div>
+
+                    <h3>Mocha</h3>
+
+                    <p>Coffee blended with chocolate.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹190</strong>
+
+                        <button onclick="addToCart('Mocha',190)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item coffee">
+
+                <img src="assets/caramel-macchiato.jpg" alt="Caramel Macchiato">
+
+                <div>
+
+                    <h3>Caramel Macchiato</h3>
+
+                    <p>Espresso with caramel flavour.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹210</strong>
+
+                        <button onclick="addToCart('Caramel Macchiato',210)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item coffee">
+
+                <img src="assets/hazelnut-coffee.jpg" alt="Hazelnut Coffee">
+
+                <div>
+
+                    <h3>Hazelnut Coffee</h3>
+
+                    <p>Fragrant coffee with hazelnut.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹200</strong>
+
+                        <button onclick="addToCart('Hazelnut Coffee',200)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item coffee">
+
+                <img src="assets/cold-brew.jpg" alt="Cold Brew">
+
+                <div>
+
+                    <h3>Cold Brew</h3>
+
+                    <p>Slow brewed chilled coffee.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹190</strong>
+
+                        <button onclick="addToCart('Cold Brew',190)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item coffee">
+
+                <img src="assets/iced-latte.jpg" alt="Iced Latte">
+
+                <div>
+
+                    <h3>Iced Latte</h3>
+
+                    <p>Chilled espresso with milk.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹190</strong>
+
+                        <button onclick="addToCart('Iced Latte',190)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item coffee">
+
+                <img src="assets/frappe.jpg" alt="Classic Frappe">
+
+                <div>
+
+                    <h3>Classic Frappe</h3>
+
+                    <p>Cold blended coffee.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹210</strong>
+
+                        <button onclick="addToCart('Classic Frappe',210)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item coffee">
+
+                <img src="assets/affogato.jpg" alt="Affogato">
+
+                <div>
+
+                    <h3>Affogato</h3>
+
+                    <p>Espresso poured over ice cream.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹230</strong>
+
+                        <button onclick="addToCart('Affogato',230)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TEA -->
+
+            <div class="menu-item tea">
+
+                <img src="assets/masala-tea.jpg" alt="Masala Tea">
+
+                <div>
+
+                    <h3>Masala Tea</h3>
+
+                    <p>Traditional Indian spiced tea.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹90</strong>
+
+                        <button onclick="addToCart('Masala Tea',90)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item tea">
+
+                <img src="assets/green-tea.jpg" alt="Green Tea">
+
+                <div>
+
+                    <h3>Green Tea</h3>
+
+                    <p>Light and refreshing green tea.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹110</strong>
+
+                        <button onclick="addToCart('Green Tea',110)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item tea">
+
+                <img src="assets/ginger-tea.jpg" alt="Ginger Tea">
+
+                <div>
+
+                    <h3>Ginger Tea</h3>
+
+                    <p>Warm tea infused with ginger.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹100</strong>
+
+                        <button onclick="addToCart('Ginger Tea',100)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item tea">
+
+                <img src="assets/lemon-tea.jpg" alt="Lemon Tea">
+
+                <div>
+
+                    <h3>Lemon Tea</h3>
+
+                    <p>Refreshing tea with lemon.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹100</strong>
+
+                        <button onclick="addToCart('Lemon Tea',100)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item tea">
+
+                <img src="assets/black-tea.jpg" alt="Black Tea">
+
+                <div>
+
+                    <h3>Black Tea</h3>
+
+                    <p>Classic strong black tea.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹90</strong>
+
+                        <button onclick="addToCart('Black Tea',90)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item tea">
+
+                <img src="assets/peach-tea.jpg" alt="Peach Tea">
+
+                <div>
+
+                    <h3>Peach Tea</h3>
+
+                    <p>Fruity and refreshing iced tea.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹130</strong>
+
+                        <button onclick="addToCart('Peach Tea',130)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- COLD DRINKS -->
+
+            <div class="menu-item cold">
+
+                <img src="assets/cold-coffee.jpg" alt="Cold Coffee">
+
+                <div>
+
+                    <h3>Cold Coffee</h3>
+
+                    <p>Creamy chilled coffee.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹160</strong>
+
+                        <button onclick="addToCart('Cold Coffee',160)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item cold">
+
+                <img src="assets/chocolate-frappe.jpg" alt="Chocolate Frappe">
+
+                <div>
+
+                    <h3>Chocolate Frappe</h3>
+
+                    <p>Chocolate blended frappe.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹220</strong>
+
+                        <button onclick="addToCart('Chocolate Frappe',220)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item cold">
+
+                <img src="assets/vanilla-frappe.jpg" alt="Vanilla Frappe">
+
+                <div>
+
+                    <h3>Vanilla Frappe</h3>
+
+                    <p>Smooth vanilla frappe.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹210</strong>
+
+                        <button onclick="addToCart('Vanilla Frappe',210)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item cold">
+
+                <img src="assets/caramel-frappe.jpg" alt="Caramel Frappe">
+
+                <div>
+
+                    <h3>Caramel Frappe</h3>
+
+                    <p>Sweet caramel blended frappe.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹220</strong>
+
+                        <button onclick="addToCart('Caramel Frappe',220)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item cold">
+
+                <img src="assets/chocolate-milkshake.jpg" alt="Chocolate Milkshake">
+
+                <div>
+
+                    <h3>Chocolate Milkshake</h3>
+
+                    <p>Rich chocolate milkshake.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹190</strong>
+
+                        <button onclick="addToCart('Chocolate Milkshake',190)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item cold">
+
+                <img src="assets/vanilla-milkshake.jpg" alt="Vanilla Milkshake">
+
+                <div>
+
+                    <h3>Vanilla Milkshake</h3>
+
+                    <p>Creamy classic vanilla.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹180</strong>
+
+                        <button onclick="addToCart('Vanilla Milkshake',180)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item cold">
+
+                <img src="assets/strawberry-milkshake.jpg" alt="Strawberry Milkshake">
+
+                <div>
+
+                    <h3>Strawberry Milkshake</h3>
+
+                    <p>Fresh strawberry flavour.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹190</strong>
+
+                        <button onclick="addToCart('Strawberry Milkshake',190)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item cold">
+
+                <img src="assets/oreo-milkshake.jpg" alt="Oreo Milkshake">
+
+                <div>
+
+                    <h3>Oreo Milkshake</h3>
+
+                    <p>Classic Oreo creamy shake.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹210</strong>
+
+                        <button onclick="addToCart('Oreo Milkshake',210)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item cold">
+
+                <img src="assets/mango-milkshake.jpg" alt="Mango Milkshake">
+
+                <div>
+
+                    <h3>Mango Milkshake</h3>
+
+                    <p>Fresh mango creamy shake.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹190</strong>
+
+                        <button onclick="addToCart('Mango Milkshake',190)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item cold">
+
+                <img src="assets/kitkat-milkshake.jpg" alt="KitKat Milkshake">
+
+                <div>
+
+                    <h3>KitKat Milkshake</h3>
+
+                    <p>Chocolate KitKat shake.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹220</strong>
+
+                        <button onclick="addToCart('KitKat Milkshake',220)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESSERT -->
+
+            <div class="menu-item dessert">
+
+                <img src="assets/chocolate-cake.jpg" alt="Chocolate Cake">
+
+                <div>
+
+                    <h3>Chocolate Cake</h3>
+
+                    <p>Rich chocolate cake.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹190</strong>
+
+                        <button onclick="addToCart('Chocolate Cake',190)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item dessert">
+
+                <img src="assets/black-forest.jpg" alt="Black Forest">
+
+                <div>
+
+                    <h3>Black Forest</h3>
+
+                    <p>Classic chocolate cherry cake.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹200</strong>
+
+                        <button onclick="addToCart('Black Forest',200)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item dessert">
+
+                <img src="assets/red-velvet.jpg" alt="Red Velvet">
+
+                <div>
+
+                    <h3>Red Velvet</h3>
+
+                    <p>Soft cake with cream cheese.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹220</strong>
+
+                        <button onclick="addToCart('Red Velvet',220)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item dessert">
+
+                <img src="assets/cheesecake.jpg" alt="Cheesecake">
+
+                <div>
+
+                    <h3>Cheesecake</h3>
+
+                    <p>Creamy classic cheesecake.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹230</strong>
+
+                        <button onclick="addToCart('Cheesecake',230)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item dessert">
+
+                <img src="assets/brownie.jpg" alt="Brownie">
+
+                <div>
+
+                    <h3>Brownie</h3>
+
+                    <p>Warm chocolate brownie.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹150</strong>
+
+                        <button onclick="addToCart('Brownie',150)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item dessert">
+
+                <img src="assets/croissant.jpg" alt="Croissant">
+
+                <div>
+
+                    <h3>Croissant</h3>
+
+                    <p>Buttery French pastry.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹140</strong>
+
+                        <button onclick="addToCart('Croissant',140)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SNACKS -->
+
+            <div class="menu-item snacks">
+
+                <img src="assets/french-fries.jpg" alt="French Fries">
+
+                <div>
+
+                    <h3>French Fries</h3>
+
+                    <p>Crispy golden fries.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹130</strong>
+
+                        <button onclick="addToCart('French Fries',130)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item snacks">
+
+                <img src="assets/garlic-bread.jpg" alt="Garlic Bread">
+
+                <div>
+
+                    <h3>Garlic Bread</h3>
+
+                    <p>Toasted bread with garlic butter.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹150</strong>
+
+                        <button onclick="addToCart('Garlic Bread',150)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item snacks">
+
+                <img src="assets/chicken-wings.jpg" alt="Chicken Wings">
+
+                <div>
+
+                    <h3>Chicken Wings</h3>
+
+                    <p>Crispy spicy chicken wings.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹280</strong>
+
+                        <button onclick="addToCart('Chicken Wings',280)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item snacks">
+
+                <img src="assets/paneer-tikka.jpg" alt="Paneer Tikka">
+
+                <div>
+
+                    <h3>Paneer Tikka</h3>
+
+                    <p>Grilled spicy paneer.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹240</strong>
+
+                        <button onclick="addToCart('Paneer Tikka',240)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PIZZA -->
+
+            <div class="menu-item pizza">
+
+                <img src="assets/margherita.jpg" alt="Margherita Pizza">
+
+                <div>
+
+                    <h3>Margherita Pizza</h3>
+
+                    <p>Classic tomato and cheese pizza.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹280</strong>
+
+                        <button onclick="addToCart('Margherita Pizza',280)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item pizza">
+
+                <img src="assets/farmhouse.jpg" alt="Farmhouse Pizza">
+
+                <div>
+
+                    <h3>Farmhouse Pizza</h3>
+
+                    <p>Loaded vegetable pizza.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹320</strong>
+
+                        <button onclick="addToCart('Farmhouse Pizza',320)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item pizza">
+
+                <img src="assets/paneer-tikka-pizza.jpg" alt="Paneer Tikka Pizza">
+
+                <div>
+
+                    <h3>Paneer Tikka Pizza</h3>
+
+                    <p>Paneer tikka with cheese.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹340</strong>
+
+                        <button onclick="addToCart('Paneer Tikka Pizza',340)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item pizza">
+
+                <img src="assets/bbq-chicken-pizza.jpg" alt="BBQ Chicken Pizza">
+
+                <div>
+
+                    <h3>BBQ Chicken Pizza</h3>
+
+                    <p>Smoky BBQ chicken pizza.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹390</strong>
+
+                        <button onclick="addToCart('BBQ Chicken Pizza',390)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BURGERS -->
+
+            <div class="menu-item burger">
+
+                <img src="assets/classic-veg-burger.jpg" alt="Classic Veg Burger">
+
+                <div>
+
+                    <h3>Classic Veg Burger</h3>
+
+                    <p>Fresh vegetable patty burger.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹180</strong>
+
+                        <button onclick="addToCart('Classic Veg Burger',180)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item burger">
+
+                <img src="assets/cheese-burger.jpg" alt="Cheese Burger">
+
+                <div>
+
+                    <h3>Cheese Burger</h3>
+
+                    <p>Juicy burger with melted cheese.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹210</strong>
+
+                        <button onclick="addToCart('Cheese Burger',210)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item burger">
+
+                <img src="assets/crispy-chicken-burger.jpg" alt="Crispy Chicken Burger">
+
+                <div>
+
+                    <h3>Crispy Chicken Burger</h3>
+
+                    <p>Crispy chicken with fresh vegetables.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹260</strong>
+
+                        <button onclick="addToCart('Crispy Chicken Burger',260)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SANDWICH -->
+
+            <div class="menu-item sandwich">
+
+                <img src="assets/grilled-cheese.jpg" alt="Grilled Cheese">
+
+                <div>
+
+                    <h3>Grilled Cheese</h3>
+
+                    <p>Golden grilled cheese sandwich.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹170</strong>
+
+                        <button onclick="addToCart('Grilled Cheese',170)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item sandwich">
+
+                <img src="assets/veg-sandwich.jpg" alt="Veg Sandwich">
+
+                <div>
+
+                    <h3>Veg Sandwich</h3>
+
+                    <p>Fresh vegetable sandwich.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹160</strong>
+
+                        <button onclick="addToCart('Veg Sandwich',160)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item sandwich">
+
+                <img src="assets/club-sandwich.jpg" alt="Club Sandwich">
+
+                <div>
+
+                    <h3>Club Sandwich</h3>
+
+                    <p>Loaded multi-layer sandwich.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹220</strong>
+
+                        <button onclick="addToCart('Club Sandwich',220)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PASTA -->
+
+            <div class="menu-item pasta">
+
+                <img src="assets/alfredo.jpg" alt="Alfredo Pasta">
+
+                <div>
+
+                    <h3>Alfredo Pasta</h3>
+
+                    <p>Creamy white sauce pasta.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹260</strong>
+
+                        <button onclick="addToCart('Alfredo Pasta',260)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item pasta">
+
+                <img src="assets/arrabbiata.jpg" alt="Arrabbiata Pasta">
+
+                <div>
+
+                    <h3>Arrabbiata Pasta</h3>
+
+                    <p>Spicy tomato sauce pasta.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹250</strong>
+
+                        <button onclick="addToCart('Arrabbiata Pasta',250)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item pasta">
+
+                <img src="assets/mushroom-pasta.jpg" alt="Mushroom Pasta">
+
+                <div>
+
+                    <h3>Mushroom Pasta</h3>
+
+                    <p>Creamy mushroom pasta.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹270</strong>
+
+                        <button onclick="addToCart('Mushroom Pasta',270)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MAIN COURSE -->
+
+            <div class="menu-item main">
+
+                <img src="assets/veg-biryani.jpg" alt="Veg Biryani">
+
+                <div>
+
+                    <h3>Veg Biryani</h3>
+
+                    <p>Aromatic vegetable biryani.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹240</strong>
+
+                        <button onclick="addToCart('Veg Biryani',240)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item main">
+
+                <img src="assets/chicken-biryani.jpg" alt="Chicken Biryani">
+
+                <div>
+
+                    <h3>Chicken Biryani</h3>
+
+                    <p>Classic aromatic chicken biryani.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹320</strong>
+
+                        <button onclick="addToCart('Chicken Biryani',320)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item main">
+
+                <img src="assets/paneer-butter-masala.jpg" alt="Paneer Butter Masala">
+
+                <div>
+
+                    <h3>Paneer Butter Masala</h3>
+
+                    <p>Creamy tomato paneer curry.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹260</strong>
+
+                        <button onclick="addToCart('Paneer Butter Masala',260)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item main">
+
+                <img src="assets/butter-naan.jpg" alt="Butter Naan">
+
+                <div>
+
+                    <h3>Butter Naan</h3>
+
+                    <p>Soft naan with butter.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹70</strong>
+
+                        <button onclick="addToCart('Butter Naan',70)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-item main">
+
+                <img src="assets/chicken-tikka.jpg" alt="Chicken Tikka">
+
+                <div>
+
+                    <h3>Chicken Tikka</h3>
+
+                    <p>Juicy grilled chicken pieces.</p>
+
+                    <div class="item-bottom">
+
+                        <strong>₹290</strong>
+
+                        <button onclick="addToCart('Chicken Tikka',290)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+                     PROMO
+===================================================== -->
+
+    <section class="promo">
+
+        <div>
+
+            <p>WEEKEND SPECIAL</p>
+
+            <h2>
+                Enjoy 20% Off On Your First Visit
+            </h2>
+
+            <span>
+                Experience premium coffee and delicious food
+                with your friends and family.
+            </span>
+
+        </div>
+
+        <a href="#contact" class="primary-btn">
+            Reserve Your Table
+        </a>
+
+    </section>
+
+
+    <!-- =====================================================
+                     GALLERY
+===================================================== -->
+
+    <section id="gallery" class="section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                THE LEOPOLD
+            </p>
+
+            <h2>
+                A Taste of Our
+                <span>World</span>
+            </h2>
+
+        </div>
+
+
+        <div class="gallery">
+
+            <img src="assets/hero.jpg" alt="Cafe">
+
+            <img src="assets/signature-coffee.jpg" alt="Coffee">
+
+            <img src="assets/signature-pizza.jpg" alt="Pizza">
+
+            <img src="assets/creamy-pasta.jpg" alt="Pasta">
+
+            <img src="assets/chocolate-cake.jpg" alt="Cake">
+
+            <img src="assets/berry-smoothie.jpg" alt="Smoothie">
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+                     REVIEWS
+===================================================== -->
+
+    <section id="reviews" class="section reviews-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                CUSTOMER REVIEWS
+            </p>
+
+            <h2>
+                What Our
+                <span>Guests Say</span>
+            </h2>
+
+            <p>
+                Real café moments, happy smiles and delicious experiences.
+            </p>
+
+        </div>
+
+
+        <div class="review-summary">
+
+            <div class="rating-number">
+                4.9
+            </div>
+
+            <div class="rating-details">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <strong>
+                    Excellent Guest Experience
+                </strong>
+
+                <span>
+                    Food • Coffee • Ambience • Service
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="reviews-grid">
+
+
+            <div class="review-card">
+
+                <div class="review-top">
+
+                    <div class="review-avatar">
+                        PS
+                    </div>
+
+                    <div>
+
+                        <h3>Priya Sharma</h3>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p>
+                    “The coffee was amazing and the ambience
+                    was so peaceful. A perfect place to spend
+                    an evening with friends.”
+                </p>
+
+                <span class="review-date">
+                    Verified Guest
+                </span>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-top">
+
+                    <div class="review-avatar">
+                        RM
+                    </div>
+
+                    <div>
+
+                        <h3>Rahul Mehta</h3>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p>
+                    “Loved the pizza and cold coffee.
+                    Everything was fresh, tasty and beautifully
+                    presented.”
+                </p>
+
+                <span class="review-date">
+                    Verified Guest
+                </span>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-top">
+
+                    <div class="review-avatar">
+                        SR
+                    </div>
+
+                    <div>
+
+                        <h3>Sneha Reddy</h3>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p>
+                    “The desserts are delicious! Chocolate cake
+                    was rich, soft and absolutely worth trying.”
+                </p>
+
+                <span class="review-date">
+                    Verified Guest
+                </span>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-top">
+
+                    <div class="review-avatar">
+                        AN
+                    </div>
+
+                    <div>
+
+                        <h3>Arjun Nair</h3>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p>
+                    “A beautiful place to relax, work or catch up
+                    with friends. Great food and a wonderful
+                    atmosphere.”
+                </p>
+
+                <span class="review-date">
+                    Verified Guest
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+                     CONTACT
+===================================================== -->
+
+    <section id="contact" class="contact-section">
+
+        <div class="contact-container">
+
+
+            <div class="contact-info">
+
+                <p class="section-label">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Let's Make Your
+                    <span>Visit Special</span>
+                </h2>
+
+                <p>
+                    Planning a dinner, celebration or coffee date?
+                    Reserve your table with us.
+                </p>
+
+
+                <div class="contact-details">
+
+
+                    <div>
+
+                        <strong>📍 Address</strong>
+
+                        <a class="contact-link"
+                            href="https://www.google.com/maps/search/?api=1&query=MG+Road%2C+Vijayawada%2C+Andhra+Pradesh"
+                            target="_blank">
+
+                            MG Road, Vijayawada,
+                            Andhra Pradesh
+
+                        </a>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>📞 Phone</strong>
+
+                        <a class="contact-link" href="tel:+919347997379">
+
+                            +91 93479 97379
+
+                        </a>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>✉️ Email</strong>
+
+                        <a class="contact-link"
+                            href="mailto:keerthisrivemula@gmail.com?subject=THE%20LEOPOLD%20Cafe%20Enquiry">
+
+                            keerthisrivemula@gmail.com
+
+                        </a>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>🕐 Opening Hours</strong>
+
+                        <p>
+                            Monday – Sunday:
+                            8:00 AM – 11:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESERVATION FORM -->
+
+            <form class="contact-form" onsubmit="bookTable(event)">
+
+                <h3>
+                    Book a Table
+                </h3>
+
+
+                <input type="text" id="name" placeholder="Your Name" required>
+
+
+                <input type="email" id="email" placeholder="Email Address" required>
+
+
+                <input type="tel" id="phone" placeholder="Phone Number" pattern="[6-9][0-9]{9}" maxlength="10" required>
+
+
+                <div class="form-row">
+
+                    <input type="date" id="date" required>
+
+
+                    <select id="time" required>
+
+                        <option value="">
+                            Select Time
+                        </option>
+
+                        <option>08:00 AM</option>
+                        <option>09:00 AM</option>
+                        <option>10:00 AM</option>
+                        <option>11:00 AM</option>
+                        <option>12:00 PM</option>
+                        <option>01:00 PM</option>
+                        <option>02:00 PM</option>
+                        <option>03:00 PM</option>
+                        <option>04:00 PM</option>
+                        <option>05:00 PM</option>
+                        <option>06:00 PM</option>
+                        <option>07:00 PM</option>
+                        <option>08:00 PM</option>
+                        <option>09:00 PM</option>
+                        <option>10:00 PM</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <select id="guests" required>
+
+                        <option value="">
+                            Guests
+                        </option>
+
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                        <option>5 Guests</option>
+                        <option>6+ Guests</option>
+
+                    </select>
+
+
+                    <select id="reservationPayment" required>
+
+                        <option value="">
+                            Payment Method
+                        </option>
+
+                        <option>
+                            Pay at Restaurant
+                        </option>
+
+                        <option>
+                            UPI
+                        </option>
+
+                        <option>
+                            Credit / Debit Card
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <textarea id="message" rows="5" placeholder="Special Request"></textarea>
+
+
+                <button type="submit" class="primary-btn">
+
+                    Reserve Table
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+               ORDER CONFIRMATION
+===================================================== -->
+
+    <section id="orderConfirmation" class="section confirmation-section hidden-section">
+
+        <div id="orderConfirmationContent"></div>
+
+    </section>
+
+
+    <!-- =====================================================
+               RESERVATION CONFIRMATION
+===================================================== -->
+
+    <section id="reservationConfirmation" class="section confirmation-section hidden-section">
+
+        <div id="reservationConfirmationContent"></div>
+
+    </section>
+
+
+    <!-- =====================================================
+                     MY ORDERS
+===================================================== -->
+
+    <section id="orders" class="section orders-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                ORDER HISTORY
+            </p>
+
+            <h2>
+                My
+                <span>Orders & Reservations</span>
+            </h2>
+
+            <p>
+                Your saved orders and table reservations
+                are stored in this browser.
+            </p>
+
+        </div>
+
+
+        <div class="history-tabs">
+
+            <button class="history-tab active" onclick="showHistory('orders',this)">
+
+                Food Orders
+
+            </button>
+
+
+            <button class="history-tab" onclick="showHistory('reservations',this)">
+
+                Table Reservations
+
+            </button>
+
+        </div>
+
+
+        <div id="orderHistory"></div>
+
+        <div id="reservationHistory" class="history-hidden">
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+                     FOOTER
+===================================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+
+            <div class="footer-brand">
+
+                <h2>
+                     THE LEOPOLD
+                </h2>
+
+                <p>
+                    Premium Café & Restaurant
+                </p>
+
+                <p>
+                    Brewed With Love,
+                    Served With Passion.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+                <a href="#orders">My Orders</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Categories
+                </h3>
+
+                <a href="#menu">Coffee</a>
+                <a href="#menu">Pizza</a>
+                <a href="#menu">Desserts</a>
+                <a href="#menu">Main Course</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Follow Us
+                </h3>
+
+                <div class="socials">
+
+                    <a href="#" onclick="return false;">
+                        Instagram
+                    </a>
+
+                    <a href="#" onclick="return false;">
+                        Facebook
+                    </a>
+
+                    <a href="#" onclick="return false;">
+                        YouTube
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 THE LEOPOLD.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+                  CHECKOUT MODAL
+===================================================== -->
+
+    <div id="checkoutModal" class="modal">
+
+        <div class="checkout-box">
+
+
+            <button class="checkout-close" onclick="closeCheckout()">
+
+                ✕
+
+            </button>
+
+
+            <div class="checkout-heading">
+
+                <p class="section-label">
+                    SECURE CHECKOUT
+                </p>
+
+                <h2>
+                    Complete Your
+                    <span>Order</span>
+                </h2>
+
+                <p>
+                    Please enter your details and select
+                    a payment method.
+                </p>
+
+            </div>
+
+
+            <form id="checkoutForm" onsubmit="placeOrder(event)">
+
+
+                <div class="checkout-grid">
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Full Name
+                        </label>
+
+                        <input type="text" id="customerName" placeholder="Enter your full name" required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Phone Number
+                        </label>
+
+                        <input type="tel" id="customerPhone" placeholder="10-digit mobile number"
+                            pattern="[6-9][0-9]{9}" maxlength="10" required>
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+
+                        <label>
+                            Email Address
+                        </label>
+
+                        <input type="email" id="customerEmail" placeholder="example@gmail.com" required>
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+
+                        <label>
+                            Delivery / Billing Address
+                        </label>
+
+                        <textarea id="customerAddress" rows="3" placeholder="House / Flat No, Street, City, PIN Code"
+                            required></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <div class="payment-section">
+
+                    <h3>
+                        Choose Payment Method
+                    </h3>
+
+
+                    <label class="payment-option">
+
+                        <input type="radio" name="paymentMethod" value="Cash on Delivery" checked>
+
+                        <span>
+
+                            <strong>
+                                💵 Cash on Delivery
+                            </strong>
+
+                            <small>
+                                Pay when your order is delivered.
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input type="radio" name="paymentMethod" value="UPI">
+
+                        <span>
+
+                            <strong>
+                                📱 UPI
+                            </strong>
+
+                            <small>
+                                Pay using Google Pay,
+                                PhonePe or Paytm.
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input type="radio" name="paymentMethod" value="Credit / Debit Card">
+
+                        <span>
+
+                            <strong>
+                                💳 Credit / Debit Card
+                            </strong>
+
+                            <small>
+                                Secure card payment.
+                            </small>
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="checkout-total">
+
+                    <span>
+                        Order Total
+                    </span>
+
+                    <strong id="checkoutTotal">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <button type="submit" class="place-order-btn">
+
+                    Place Order
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+                     CART MODAL
+===================================================== -->
+
+    <div class="cart-modal" id="cartModal">
+
+        <div class="cart-box">
+
+
+            <div class="cart-header">
+
+                <h2>
+                    Your Order
+                </h2>
+
+                <button onclick="closeCart()">
+                    ✕
+                </button>
+
+            </div>
+
+
+            <div id="cartItems"></div>
+
+
+            <div class="cart-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cartTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <button class="checkout-btn" onclick="checkout()">
+
+                Proceed to Checkout
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- TOAST -->
+
+    <div id="toast"></div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
